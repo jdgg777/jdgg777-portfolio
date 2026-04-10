@@ -3,7 +3,7 @@
  */
 
 // Site configuration
-export const SITE_URL = 'https://jdgg777.github.io';
+export const SITE_URL = 'https://jdgg777.github.io/jdgg777-portfolio';
 export const AUTHOR_NAME = 'Jose Gomez';
 export const TWITTER_HANDLE = '@jdgg777';
 

@@ -2,10 +2,11 @@ import bundleAnalyzer from '@next/bundle-analyzer';
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  output: 'export',
+ output: 'export',
+ basePath: '/jdgg777-portfolio',
 
-  // Allow dev server access from local network (mobile testing, etc.)
-  allowedDevOrigins: ['http://192.168.*.*:3000'],
+ // Allow dev server access from local network (mobile testing, etc.)
+ allowedDevOrigins: ['http://192.168.*.*:3000'],
 
   images: {
     unoptimized: true,
