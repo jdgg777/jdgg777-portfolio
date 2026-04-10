@@ -27,7 +27,7 @@ const raleway = Raleway({
 });
 
 const siteDescription =
-  'Member of the Technical Staff at OpenAI, working on Promptfoo and agent security. Previously co-founded Promptfoo, Arthena, and Matroid, and led engineering at Smile ID.';
+  'Management Engineer specializing in operations optimization, process automation, and data analysis. C2 English certified, bilingual professional open to opportunities in US, LATAM, Europe, and remote positions.';
 
 export const metadata: Metadata = {
   title: {
@@ -37,13 +37,15 @@ export const metadata: Metadata = {
   description: siteDescription,
   keywords: [
     AUTHOR_NAME,
-    'OpenAI',
-    'Promptfoo',
-    'agent security',
-    'LLM security',
-    'machine learning',
-    'startup founder',
-    'YC',
+    'Management Engineer',
+    'Business Analyst',
+    'Supply Chain',
+    'Process Automation',
+    'Data Analysis',
+    'Operations',
+    'Python',
+    'SQL',
+    'C2 English',
   ],
   authors: [{ name: AUTHOR_NAME }],
   creator: AUTHOR_NAME,
@@ -97,7 +99,6 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
-        {/* CSP-safe theme initialization - prevents flash on load */}
         <Script id="theme-init" strategy="beforeInteractive">
           {`(function(){try{var t=window.localStorage.getItem('theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t)}else if(window.matchMedia('(prefers-color-scheme:dark)').matches){document.documentElement.setAttribute('data-theme','dark')}else{document.documentElement.setAttribute('data-theme','light')}}catch(e){}})();`}
         </Script>

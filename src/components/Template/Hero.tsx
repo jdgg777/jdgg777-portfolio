@@ -1,5 +1,4 @@
 import Link from 'next/link';
-
 import ThemePortrait from './ThemePortrait';
 
 export default function Hero() {
@@ -11,27 +10,23 @@ export default function Hero() {
         </div>
 
         <h1 className="hero-title">
-          <span className="hero-name">Michael D&apos;Angelo</span>
+          <span className="hero-name">Jose Gomez</span>
         </h1>
 
         <p className="hero-tagline">
-          Member of the Technical Staff at{' '}
-          <a href="https://openai.com" className="hero-highlight">
-            OpenAI
-          </a>
-          , where I work on{' '}
-          <a href="https://promptfoo.dev" className="hero-highlight">
-            Promptfoo
-          </a>{' '}
-          and agent security.
+          Management Engineer specializing in operations optimization, process
+          automation, and data analysis.
           <br />
-          Previously co-founded, scaled, and sold Promptfoo to OpenAI.
+          <a href="mailto:dgomez0728@gmail.com" className="hero-highlight">
+            Open to opportunities
+          </a>{' '}
+          across US, LATAM, Europe, and remote positions.
         </p>
 
         <div className="hero-chips">
-          <span className="hero-chip">YC Alum</span>
-          <span className="hero-chip">Stanford ICME</span>
-          <span className="hero-chip">Co-founded Arthena & Matroid</span>
+          <span className="hero-chip">C2 English Certified</span>
+          <span className="hero-chip">Supply Chain Expert</span>
+          <span className="hero-chip">Process Automation</span>
         </div>
 
         <div className="hero-cta">

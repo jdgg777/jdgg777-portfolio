@@ -7,169 +7,126 @@ export interface Skill {
 export interface Category {
   name: string;
   color: string;
-  /** Pre-computed text color for contrast - 'dark' for light backgrounds, 'light' for dark */
   textColor: 'dark' | 'light';
 }
 
 const skills: Skill[] = [
-  // Languages
+  // Management & Operations
   {
-    title: 'Python',
+    title: 'Project Management',
     competency: 5,
-    category: ['Languages', 'ML Engineering'],
+    category: ['Management'],
   },
   {
-    title: 'TypeScript',
+    title: 'Process Optimization',
     competency: 5,
-    category: ['Languages', 'Web Development'],
+    category: ['Management'],
+  },
+  {
+    title: 'Supply Chain Management',
+    competency: 5,
+    category: ['Management', 'Operations'],
+  },
+  {
+    title: 'Negotiations',
+    competency: 5,
+    category: ['Management'],
+  },
+  {
+    title: 'Inventory Management',
+    competency: 4,
+    category: ['Operations'],
+  },
+  {
+    title: 'Business Process Modeling',
+    competency: 4,
+    category: ['Management'],
+  },
+  // Technical
+  {
+    title: 'Python',
+    competency: 4,
+    category: ['Technical'],
   },
   {
     title: 'SQL',
     competency: 4,
-    category: ['Languages', 'Databases'],
-  },
-  // AI & LLM
-  {
-    title: 'AI Agents',
-    competency: 5,
-    category: ['ML Engineering'],
+    category: ['Technical', 'Data'],
   },
   {
-    title: 'LLM Evaluation',
-    competency: 5,
-    category: ['ML Engineering'],
-  },
-  {
-    title: 'AI Red-teaming',
-    competency: 5,
-    category: ['ML Engineering'],
-  },
-  {
-    title: 'LLM APIs',
-    competency: 5,
-    category: ['ML Engineering'],
-  },
-  {
-    title: 'RAG',
+    title: 'XML',
     competency: 4,
-    category: ['ML Engineering'],
+    category: ['Technical'],
   },
   {
-    title: 'Prompt Engineering',
-    competency: 4,
-    category: ['ML Engineering'],
-  },
-  {
-    title: 'Vector Databases',
-    competency: 4,
-    category: ['ML Engineering', 'Databases'],
-  },
-  {
-    title: 'PyTorch',
-    competency: 4,
-    category: ['ML Engineering'],
-  },
-  {
-    title: 'Pandas',
+    title: 'Data Analysis',
     competency: 5,
-    category: ['ML Engineering', 'Data Engineering'],
+    category: ['Data'],
   },
-  // Web Development
   {
-    title: 'Node.js',
+    title: 'Process Automation',
     competency: 5,
-    category: ['Web Development'],
+    category: ['Technical', 'Management'],
   },
   {
-    title: 'FastAPI',
+    title: 'Dashboard Development',
     competency: 4,
-    category: ['Web Development'],
+    category: ['Data', 'Technical'],
   },
   {
-    title: 'Next.js',
+    title: 'SAP ERP',
+    competency: 4,
+    category: ['Operations', 'Technical'],
+  },
+  {
+    title: 'API Integration',
     competency: 3,
-    category: ['Web Development'],
-  },
-  // Databases
-  {
-    title: 'PostgreSQL',
-    competency: 4,
-    category: ['Databases'],
+    category: ['Technical'],
   },
   {
-    title: 'Redis',
+    title: 'Web Development',
     competency: 3,
-    category: ['Databases'],
+    category: ['Technical'],
   },
-  // Infrastructure
+  // Tools
   {
-    title: 'AWS',
+    title: 'Microsoft Excel (Advanced)',
+    competency: 5,
+    category: ['Tools'],
+  },
+  {
+    title: 'Microsoft Project',
     competency: 4,
-    category: ['Infrastructure'],
+    category: ['Tools', 'Management'],
   },
   {
-    title: 'Docker',
-    competency: 4,
-    category: ['Infrastructure'],
-  },
-  {
-    title: 'Kubernetes',
+    title: 'Google Ads',
     competency: 3,
-    category: ['Infrastructure'],
-  },
-  {
-    title: 'Observability',
-    competency: 4,
-    category: ['Infrastructure', 'ML Engineering'],
+    category: ['Tools'],
   },
 ].map((skill) => ({ ...skill, category: skill.category.sort() }));
 
-/**
- * Category colors with pre-computed text contrast.
- * Uses CSS custom properties defined in tailwind.css for runtime styling,
- * with textColor pre-computed from the hex values for accessibility.
- *
- * Hex values from tailwind.css @theme block:
- * --color-skill-1: #6968b3, --color-skill-2: #37b1f5, --color-skill-3: #40494e
- * --color-skill-4: #515dd4, --color-skill-5: #e47272, --color-skill-6: #cc7b94
- */
 const CATEGORY_COLORS: { color: string; textColor: 'dark' | 'light' }[] = [
-  { color: 'var(--color-skill-1)', textColor: 'light' }, // #6968b3 - dark bg
-  { color: 'var(--color-skill-2)', textColor: 'dark' }, // #37b1f5 - light bg
-  { color: 'var(--color-skill-3)', textColor: 'light' }, // #40494e - dark bg
-  { color: 'var(--color-skill-4)', textColor: 'light' }, // #515dd4 - dark bg
-  { color: 'var(--color-skill-5)', textColor: 'dark' }, // #e47272 - light bg
-  { color: 'var(--color-skill-6)', textColor: 'dark' }, // #cc7b94 - light bg
+  { color: 'var(--color-skill-1)', textColor: 'light' },
+  { color: 'var(--color-skill-2)', textColor: 'dark' },
+  { color: 'var(--color-skill-3)', textColor: 'light' },
+  { color: 'var(--color-skill-4)', textColor: 'light' },
+  { color: 'var(--color-skill-5)', textColor: 'dark' },
+  { color: 'var(--color-skill-6)', textColor: 'dark' },
 ];
 
-// Fallback colors for categories beyond the predefined set (with pre-computed contrast)
 const FALLBACK_COLORS: { color: string; textColor: 'dark' | 'light' }[] = [
   { color: '#3896e2', textColor: 'dark' },
   { color: '#c3423f', textColor: 'light' },
   { color: '#d75858', textColor: 'light' },
-  { color: '#747fff', textColor: 'light' },
-  { color: '#64cb7b', textColor: 'dark' },
 ];
 
-/**
- * Build categories from skills with type-safe color assignment.
- * Logs a warning in development if there are more categories than colors.
- */
 function buildCategories(skillsList: Skill[]): Category[] {
   const uniqueCategories = Array.from(
     new Set(skillsList.flatMap(({ category }) => category)),
   ).sort();
 
   const allColors = [...CATEGORY_COLORS, ...FALLBACK_COLORS];
-
-  if (
-    process.env.NODE_ENV === 'development' &&
-    uniqueCategories.length > allColors.length
-  ) {
-    console.warn(
-      `[skills.ts] Warning: ${uniqueCategories.length} categories but only ${allColors.length} colors defined`,
-    );
-  }
 
   return uniqueCategories.map((category, index) => {
     const colorConfig = allColors[index] ?? {

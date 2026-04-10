@@ -3,9 +3,9 @@
  */
 
 // Site configuration
-export const SITE_URL = 'https://mldangelo.com';
-export const AUTHOR_NAME = "Michael D'Angelo";
-export const TWITTER_HANDLE = '@dangelosaurus';
+export const SITE_URL = 'https://jdgg777.github.io';
+export const AUTHOR_NAME = 'Jose Gomez';
+export const TWITTER_HANDLE = '@jdgg777';
 
 // Image dimension constants
 export const AVATAR_SIZE = {
@@ -28,7 +28,6 @@ export const MAX_COMPETENCY = 5;
  */
 export function formatDate(dateStr: string): string {
   if (!dateStr) return '';
-  // Parse as UTC to avoid timezone shifts
   const date = new Date(`${dateStr}T12:00:00`);
   return date.toLocaleDateString('en-US', {
     year: 'numeric',
