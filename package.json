@@ -1,11 +1,11 @@
 {
-  "name": "personal-site",
+  "name": "jdgg777-portfolio",
   "version": "4.1.0",
-  "homepage": "https://mldangelo.com/",
+  "homepage": "https://jdgg777.github.io/jdgg777-portfolio/",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mldangelo/personal-site.git"
+    "url": "https://github.com/jdgg777/jdgg777-portfolio.git"
   },
   "engines": {
     "node": "^20.19.0 || ^22.13.0 || >=24.0.0"

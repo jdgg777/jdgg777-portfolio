@@ -4,18 +4,18 @@ import { StatData } from '../../components/Stats/types';
 
 /* Keys match keys returned by the github api. Fields without keys are
  * mostly jokes. To see everything returned by the github api, run:
- curl https://api.github.com/repos/mldangelo/personal-site
+ curl https://api.github.com/repos/jdgg777/jdgg777-portfolio
  */
 const data: StatData[] = [
   {
     label: 'Stars this repository has on github',
     key: 'stargazers_count',
-    link: 'https://github.com/mldangelo/personal-site/stargazers',
+    link: 'https://github.com/jdgg777/jdgg777-portfolio/stargazers',
   },
   {
     label: 'Number of people watching this repository',
     key: 'subscribers_count',
-    link: 'https://github.com/mldangelo/personal-site/stargazers',
+    link: 'https://github.com/jdgg777/jdgg777-portfolio/stargazers',
   },
   {
     label: 'Number of forks',
