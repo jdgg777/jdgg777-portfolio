@@ -1,0 +1,1 @@
+- [Career-Ops Pipeline Scripts](project-career-ops-pipeline-scripts.md) — 8 Python scripts for career-ops automation created 2026-04-24

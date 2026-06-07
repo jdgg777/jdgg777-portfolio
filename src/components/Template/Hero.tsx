@@ -14,8 +14,8 @@ export default function Hero() {
         </h1>
 
         <p className="hero-tagline">
-          Management Engineer specializing in operations optimization, process
-          automation, and data analysis.
+          Solutions Architect & Management Engineer specializing in system
+          design, process automation, and data-driven operations.
           <br />
           <a href="mailto:dgomez0728@gmail.com" className="hero-highlight">
             Open to opportunities

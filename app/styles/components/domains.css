@@ -1,0 +1,80 @@
+/* ========================================
+DOMAIN SHOWCASE — Solutions Architecture
+======================================== */
+
+.domains-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-border-bg);
+}
+
+.domains-section h2 {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-weight-black);
+  margin-bottom: 2rem;
+  color: var(--color-fg-bold);
+}
+
+.domains-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 600px) {
+  .domains-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .domains-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.domain-card {
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  border: 1px solid var(--color-border-bg);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.domain-card:hover {
+  transform: translateY(var(--lift-md));
+  border-color: var(--color-accent-border);
+  box-shadow: var(--shadow-lg), 0 0 0 1px var(--color-accent-border);
+}
+
+.domain-card h3 {
+  font-size: var(--text-lg);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 0.75rem;
+  color: var(--color-fg-bold);
+}
+
+.domain-card p {
+  font-size: var(--text-sm);
+  color: var(--color-fg-light);
+  line-height: var(--leading-relaxed);
+  margin-bottom: 1rem;
+}
+
+.domain-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.domain-tag {
+  font-size: var(--text-xs);
+  font-weight: var(--font-weight-medium);
+  padding: 0.25rem 0.625rem;
+  border-radius: var(--radius-full);
+  background: var(--color-surface-subtle);
+  color: var(--color-accent);
+  border: 1px solid var(--color-border-bg);
+  white-space: nowrap;
+}

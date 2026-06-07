@@ -27,7 +27,7 @@ const raleway = Raleway({
 });
 
 const siteDescription =
-  'Management Engineer specializing in operations optimization, process automation, and data analysis. C2 English certified, bilingual professional open to opportunities in US, LATAM, Europe, and remote positions.';
+  'Solutions Architect & Management Engineer specializing in system design, process automation, and data-driven operations. C2 English certified, 8+ years experience across supply chain, business analysis, and software engineering.';
 
 export const metadata: Metadata = {
   title: {
